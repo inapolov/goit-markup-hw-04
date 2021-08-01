@@ -10,6 +10,7 @@ body {
   --heading-text-color: #212121;
   --accent-color: #2196f3;
   --primery-white-color: #ffffff;
+  --icon-color: #AFB1B8;
 }
 h1, h2, h3, h4, h5, h6, p{
   margin: 0;
@@ -97,6 +98,26 @@ img{
 .contacts .link:focus {
   color: var(--accent-color);
 }
+.mail{
+  display: flex;
+  align-items: center;
+ 
+}
+.tel {
+  display: flex;
+  align-items: center;
+  
+}
+.envelope{
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.smartphone{  
+  margin-right: 10px;
+  fill: currentColor;
+}
+
 /*Main*/
 /*Герой*/
 .hero {
@@ -143,6 +164,7 @@ img{
   background-position: center;
   background-size: cover;
 }
+
 /*section*/
 .section {
   padding-top: 94px;
@@ -187,6 +209,17 @@ img{
   font-size: 14px;
   line-height: 1.71;
 }
+.box-advantages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  background-color: #F5F4FA ;
+  margin-bottom: 30px;
+}
+
+
 /*Чем мы занимаемся?*/
 .whatwedo {
   display: flex;
@@ -207,7 +240,9 @@ img{
   flex-wrap: wrap;
 }
 .team .item {
-  width: 270px;  
+  width: 270px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 0 0 4px 4px;
 }
 .team .item + .item{
   margin-left: 30px;
@@ -220,7 +255,10 @@ img{
 .team-description{
   padding-top: 30px;
   padding-bottom: 30px;
+  background-color: var(--primery-white-color);
+  border-radius: 0 0 4px 4px;
 }
+
 .team-title {
   text-align: center;
   margin-top: 0;
@@ -233,10 +271,46 @@ img{
 .team .text {
   text-align: center;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 16px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
+}
+.team-tumb{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--icon-color);  
+}
+.team-tumb .icon + .icon{
+  margin-left: 10px;
+}
+.social:hover{
+  color: var(--primery-white-color); 
+  background-color: var(--accent-color);
+}
+
+.instagram{
+  fill: currentColor;
+}
+.twitter{
+  fill: currentColor;
+}
+.facebook{
+  fill: currentColor;
+}
+.linkedin{
+  fill: currentColor;
 }
 
 /*Footer*/
