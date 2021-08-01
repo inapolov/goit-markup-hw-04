@@ -295,8 +295,17 @@ img{
 .team-tumb .icon + .icon{
   margin-left: 10px;
 }
-.social:hover{
+.social:hover,
+.social:focus{
   color: var(--primery-white-color); 
+  background-color: var(--accent-color);
+}
+.invite .social {
+  color: var(--primery-white-color);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.invite .social:hover,
+.invite .social:focus{
   background-color: var(--accent-color);
 }
 
@@ -310,6 +319,46 @@ img{
   fill: currentColor;
 }
 .linkedin{
+  fill: currentColor;
+}
+
+/*Постоянные клиенты*/
+
+.clients{
+display: flex;
+justify-content: space-between;
+}
+.clients .item a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  color: var(--icon-color);
+  border: solid 1px var(--icon-color);
+  border-radius: 4px;
+}
+.clients .item a:hover,
+.clients .item a:focus{
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+.yaco {
+  fill: currentColor;
+}
+.here{
+  fill: currentColor;
+}
+.company{
+  fill: currentColor;
+}
+.foster{
+  fill: currentColor;
+}
+.brand{
+  fill: currentColor;
+}
+.tagline{
   fill: currentColor;
 }
 
@@ -368,6 +417,7 @@ line-height: 16px;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--primery-white-color);
+margin-bottom: 20px;
 }
 /*Portfolio*/
 
