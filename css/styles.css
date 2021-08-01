@@ -319,7 +319,10 @@ img{
   padding-bottom: 60px;
   background-color: #2f303a;
 }
-
+.footer .container{
+  display: flex;
+  align-items: baseline;
+}
 .footer-logo {
   display: inline-block;
   margin-top: 0;
@@ -353,6 +356,19 @@ img{
   line-height: 1.71;
   text-decoration: none;
 }
+.invite{
+  margin-left: 70px;
+}
+.invite-title{
+font-family: Roboto;
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--primery-white-color);
+}
 /*Portfolio*/
 
 .filter {
@@ -385,6 +401,7 @@ img{
 .filter .button:focus {
   color: var(--primery-white-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 /*Работы*/
@@ -398,6 +415,10 @@ img{
   margin-right: 30px;
   margin-bottom: 30px;
   
+}
+.portfolio .item:hover,
+.portfolio .item:focus{
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .portfolio .item:nth-child(3n) {
   margin-right: 0;
